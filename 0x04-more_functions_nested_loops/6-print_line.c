@@ -1,19 +1,20 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_line - prints line
- * @n: param
+ * print_line - prints a line
+ * @n: variable
+ *
+ * Return: 0
  */
 
 void print_line(int n)
 {
-	int i = 1;
+	int a = 0;
 
-	while (i <= n)
+	while (a < n && n > 0)
 	{
-		_putchar(95);
-		i++;
+		_putchar('_');
+		a++;
 	}
 	_putchar('\n');
 }
-
