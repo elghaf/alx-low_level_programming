@@ -9,23 +9,23 @@
   *
   * Return: The address of the new list or NULL if it failed
   */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *temp;
+	list_t *temps;
 
 	if (head != NULL && str != NULL)
 	{
-		temp = malloc(sizeof(list_t));
-		if (temp == NULL)
+		temps = malloc(sizeof(list_t));
+		if (temps == NULL)
 			return (NULL);
 
-		temp->str = strdup(str);
-		temp->len = _strlen(str);
-		temp->next = *head;
+		temps->str = strdup(str);
+		temps->len = _strlen(str);
+		temps->next = *head;
 
-		*head = temp;
+		*head = temps;
 
-		return (temp);
+		return (temps);
 	}
 
 	return (0);
@@ -39,13 +39,13 @@ list_t *add_node(list_t **head, const char *str)
   */
 int _strlen(const char *s)
 {
-	int c = 0;
+	int c_str = 0;
 
 	while (*s)
 	{
 		s++;
-		c++;
+		c_str++;
 	}
 
-	return (c);
+	return (c_str);
 }
