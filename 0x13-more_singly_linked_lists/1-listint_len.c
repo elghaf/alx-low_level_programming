@@ -3,8 +3,8 @@
 
 
 /**
- *  returns number of elements in a linked list
- * @h: linked lists of types listint_t to traverses
+ * listint_len - returns the number of elements in a linked lists
+ * @h: linked list of type listint_t to traverse
  *
  * Return: number of nodes
  */

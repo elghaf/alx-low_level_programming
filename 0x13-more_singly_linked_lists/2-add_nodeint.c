@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
-  * add_nodeint - funtion that adds a new nodes at the beginnings of a lists.
-  * Return: Address of the news elements or NULL if fails.
+  * add_nodeint - funtion that adds a new node at the beginning of a list.
+  * Return: Address of the new element or NULL if fail.
   * @head: head of a list
   * @n: n element.
   */
@@ -18,7 +18,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	if (res == NULL){
 		return (NULL);
 	}
-
+	
 	res->n = n;
 	res->next = *head;
 	*head = res;
