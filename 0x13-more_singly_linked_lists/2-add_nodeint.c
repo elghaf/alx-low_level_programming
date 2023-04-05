@@ -10,14 +10,18 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
+// to allocate memory for the new node created
 
 	new = malloc(sizeof(listint_t));
-	if (!new)
+	if (new == NULL)
 		return (NULL);
 
+// set the value of n in the new node created
+// to understand the concepte read about array links
 	new->n = n;
 	new->next = *head;
+// update head pointer to the point of node created
 	*head = new;
-
+// finaly return the value pointer in the new nodes
 	return (new);
 }

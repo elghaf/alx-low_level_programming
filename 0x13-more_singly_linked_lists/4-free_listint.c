@@ -1,17 +1,21 @@
 #include "lists.h"
 
 /**
- * free_listint - frees a linked list
- * @head: listint_t list to be freed
+ * free_listint - frees a linked lists.
+ * @head: pointer list
+ * Return: Void
  */
 void free_listint(listint_t *head)
 {
-	listint_t *temp;
+// declaration of timeponter
+	listint_t *tms;
 
 	while (head)
 	{
-		temp = head->next;
-		free(head);
-		head = temp;
+		// current store node create in tms
+		tms = head;
+		//update the header
+		head = head -> next;
+		free(tms);
 	}
 }
