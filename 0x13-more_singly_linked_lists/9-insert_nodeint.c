@@ -11,36 +11,41 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int i;
-	listint_t *new;
-	listint_t *temp = *head;
+	unsigned int i = 0; /* Initialize a counter to 0 */
+listint_t *create_node, *tms;
 
-	new = malloc(sizeof(listint_t));
-	if (!new || !head)
-		return (NULL);
+if (head == NULL)
+return (NULL);
 
-	new->n = n;
-	new->next = NULL;
+create_node = malloc(sizeof(listint_t));
 
-	if (idx == 0)
-	{
-		new->next = *head;
-		*head = new;
-		return (new);
-	}
+if (create_node == NULL) /* If memory allocation fails, return NULL */
+return (NULL);
 
-	for (i = 0; temp && i < idx; i++)
-	{
-		if (i == idx - 1)
-		{
-			new->next = temp->next;
-			temp->next = new;
-			return (new);
-		}
-		else
-			temp = temp->next;
-	}
+create_node->n = n; /* Set the data of new node to n */
+tms = *head; /* Set the temporary node to the head of the linked list */
 
-	return (NULL);
+if (idx == 0)
+{
+create_node->next = *head;
+*head = create_node; /* Set the head pointer to the new node */
+return (create_node);
+}
+
+while (i < idx - 1)
+{
+if (tms == NULL)
+{
+free(create_node); /* Free the memory for new node */
+return (NULL);
+}
+tms = tms->next; /* Move to next node */
+i++; /* Increment i */
+}
+
+create_node->next = tms->next; /* Set next pointer to the next node */
+tms->next = create_node; /* Set the next pointer to the new node */
+
+return (create_node);
 }
 
