@@ -4,11 +4,12 @@
 
 
 /**
- * main - Prints if number is positive, zero or negative
- * Return: Always 0 (Success)
+ * main - My entry point
  *
+ * Desription: if number is positive, zero or negative
+ *
+ * Return: always Zero (success)
  */
-
 int main(void)
 {
 	int n;
