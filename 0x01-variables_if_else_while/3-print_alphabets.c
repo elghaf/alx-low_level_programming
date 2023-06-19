@@ -5,26 +5,26 @@
  *
  * Description: Prints the alphabet in lowercase and uppercase
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char lowercaseLetter = 'a';
-    char uppercaseLetter = 'A';
+	char lowercaseLetter = 'a';
+	char uppercaseLetter = 'A';
 
-    while (lowercaseLetter <= 'z')
-    {
-        putchar(lowercaseLetter);
-        lowercaseLetter++;
-    }
+	while (lowercaseLetter <= 'z')
+	{
+		putchar(lowercaseLetter);
+		lowercaseLetter++;
+	}
 
-    while (uppercaseLetter <= 'Z')
-    {
-        putchar(uppercaseLetter);
-        uppercaseLetter++;
-    }
+	while (uppercaseLetter <= 'Z')
+	{
+		putchar(uppercaseLetter);
+		uppercaseLetter++;
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return 0;
+	return (0);
 }
