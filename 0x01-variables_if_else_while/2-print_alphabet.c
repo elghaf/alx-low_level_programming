@@ -3,19 +3,17 @@
 /**
  * main - Entry point
  *
- * Description: alphABET
- *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char lowercase_letter;
+	int lowercaseLetter;
 
-	for (lowercase_letter = 'a'; lowercase_letter <= 'z'; lowercase_letter++)
+	for (lowercaseLetter = 97; lowercaseLetter <= 122; lowercaseLetter++)
 	{
-		putchar(lowercase_letter);
+		putchar(lowercaseLetter);
 	}
 
-	putchar('\n');
-	return 0;
+	putchar(10);
+	return (0);
 }
