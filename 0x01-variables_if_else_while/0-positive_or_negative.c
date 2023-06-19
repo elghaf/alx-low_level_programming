@@ -2,13 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-
 /**
- * main - My entry point
+ * main - Entry point of the program
  *
- * Desription: if number is positive, zero or negative
+ * Description: Generates a random number and determines if it is positive,
+ * zero, or negative.
  *
- * Return: always Zero (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -16,7 +16,8 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+
+	/* Check if the number is positive, zero, or negative */
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
@@ -29,6 +30,6 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	
+
 	return (0);
 }
