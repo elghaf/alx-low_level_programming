@@ -5,6 +5,7 @@
  * Description: Prints lowercase alphabets from a to z.
  * Return: void
  */
+
 void print_alphabet(void)
 {
 	char c_char;
