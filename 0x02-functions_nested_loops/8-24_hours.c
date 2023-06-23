@@ -2,6 +2,8 @@
 
 /**
  * jack_bauer.
+ * Description: This function prints the time in HH:MM format for every minute of the day,
+ *              ranging from 00:00 to 23:59.
  */
 void jack_bauer(void)
 {
