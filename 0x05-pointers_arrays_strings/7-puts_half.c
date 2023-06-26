@@ -9,8 +9,10 @@ void puts_half(char *str)
 {
     int len = 0;
     int n;
+    int i; // Move the declaration of 'i' to the beginning
+
     char *ptr = str;
-	int len_len;
+    int len_len;
 
     while (*ptr != '\0')
     {
@@ -19,10 +21,9 @@ void puts_half(char *str)
     }
 
     n = len / 2;
-	len_len = len % 2;
+    len_len = len % 2;
     if (len_len != 0)
         n++;
-	int i;
 
     for (i = n; i < len; i++)
     {
