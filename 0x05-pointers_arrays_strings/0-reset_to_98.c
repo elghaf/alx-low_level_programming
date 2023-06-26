@@ -6,6 +6,8 @@
  * Return: no return.
  */
 
-void reset_to_98(int *input_integer){
+void reset_to_98(int *input_integer)
+{
 	*input_integer = 98;
 }
+
