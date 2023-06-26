@@ -16,4 +16,3 @@ int _strlen(char *string_len)
 	}
 	return (counter);
 }
-
