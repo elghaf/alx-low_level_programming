@@ -20,8 +20,9 @@ void puts_half(char *str)
     n = len / 2;
     if (len % 2 != 0)
         n++;
+	int i;
 
-    for (int i = n; i < len; i++)
+    for (i = n; i < len; i++)
     {
         putchar(str[i]);
     }
