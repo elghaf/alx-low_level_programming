@@ -8,15 +8,13 @@
  */
 void print_array(int *arr, int length)
 {
-    if (length <= 0)
-        return;
-
-    printf("%d", arr[0]);
-
-    for (int i = 1; i < length; i++)
-    {
-        printf(", %d", arr[i]);
-    }
-
-    printf("\n");
+int i = 0;
+if (length <= 0)
+    return;
+printf("%d", arr[0]);
+for (i = 1; i < length; i++)
+{
+    printf(", %d", arr[i]);
+}
+printf("\n");
 }
