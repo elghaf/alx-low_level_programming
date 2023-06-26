@@ -11,8 +11,8 @@ void print_rev(char *str)
 
     while (str[length] != '\0')
         length++;
-
-    for (int i = length - 1; i >= 0; i--)
+	int dec = length - 1;
+    for (int i = dec; i >= 0; i--)
         putchar(str[i]);
 
     putchar('\n');
