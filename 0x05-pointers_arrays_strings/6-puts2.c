@@ -7,22 +7,22 @@
  */
 void puts2(char *str)
 {
-    int length = 0;
-    char *ptr = str;
+	int length = 0;
+	char *ptr = str;
 
-    while (*ptr != '\0')
-    {
-        length++;
-        ptr++;
-    }
+	while (*ptr != '\0')
+	{
+		length++;
+		ptr++;
+	}
 
-    for (int index = 0; index < length; index++)
-    {
-        if (index % 2 == 0)
-        {
-            putchar(str[index]);
-        }
-    }
+	for (int index = 0; index < length; index++)
+	{
+		if (index % 2 == 0)
+		{
+			putchar(str[index]);
+		}
+	}
 
-    putchar('\n');
+	putchar('\n');
 }
