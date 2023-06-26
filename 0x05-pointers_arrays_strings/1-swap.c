@@ -7,6 +7,7 @@
  * @second_int : second integer.
  * Return : no return.
  *
+ * Function that swaps the values of two integers
  */
 
 void swap_int(int *first_int, int *second_int)
