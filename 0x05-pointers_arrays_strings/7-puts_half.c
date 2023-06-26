@@ -11,10 +11,10 @@ int len = 0, n, i, len_len;
 char *ptr = str;
 
 while (*ptr != '\0')
-    {
-        ptr++;
-        len++;
-    }
+{
+    ptr++;
+    len++;
+}
 
 n = len / 2;
 len_len = len % 2;
