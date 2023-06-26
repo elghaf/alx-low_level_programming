@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_array - print elements of an array
@@ -8,13 +7,13 @@
  */
 void print_array(int *arr, int length)
 {
-int i = 0;
-if (length <= 0)
-    return;
-printf("%d", arr[0]);
-for (i = 1; i < length; i++)
+int i;
+for (i = 0; i < length ; i++)
 {
-    printf(", %d", arr[i]);
+if (i != length - 1)
+    printf("%d, ", arr[i]);
+else
+    printf("%d", arr[i]);
 }
 printf("\n");
 }
