@@ -7,12 +7,8 @@
  */
 void puts_half(char *str)
 {
-    int len = 0;
-    int n;
-    int i; /* Move the declaration of 'i' to the beginning */
-
+    int len = 0,n,i,len_len;
     char *ptr = str;
-    int len_len;
 
     while (*ptr != '\0')
     {
