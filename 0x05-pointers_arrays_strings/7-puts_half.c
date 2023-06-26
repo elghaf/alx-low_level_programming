@@ -12,18 +12,18 @@ char *ptr = str;
 
 while ((*ptr) != '\0')
 {
-    ptr++;
-    len++;
+ptr++;
+len++;
 }
 
 n = len / 2;
 len_len = len % 2;
 
 if (len_len != 0)
-    n++;
+n++;
 for (i = n; i < len; i++)
 {
-    putchar(str[i]);
+putchar(str[i]);
 }
 putchar('\n');
 }
