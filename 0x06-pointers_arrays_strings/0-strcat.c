@@ -16,12 +16,12 @@ while(first_string[first])
 {
 first++;
 }
-result = first_strinng;
+result = first_string;
 for (second=0; second_string[second] != 0;second++)
 {
-	result[second] = second_string[second];
-	second++;
+	first_string[first] = second_string[second];
+	first++;
 }
-result[second] = '\0';
-return(result);
+first_string[first] = '\0';
+return(first_string);
 }
