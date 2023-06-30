@@ -17,8 +17,8 @@ first++;
 }
 for (second=0; second_string[second] != 0;second++)
 {
-	first_string[first] = second_string[second];
-	first++;
+first_string[first] = second_string[second];
+first++;
 }
 first_string[first] = '\0';
 return(first_string);
