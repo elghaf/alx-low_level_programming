@@ -10,16 +10,16 @@
  **/
 char *_strncat(char *first_string, char *second_string, int n)
 {
-    int lenght_string = 0, i =0;
+int lenght_string = 0, i =0;
 
-    while (first_string[i++])
-    {
-        lenght_string++;
-    }
-    for ( i = 0; second_string[i] && i < n ; i++)
-    {
-        /* code */
-        first_string[lenght_string++] = second_string[i];
-    }
-    return (first_string); 
+while (first_string[i++])
+{
+lenght_string++;
+}
+for ( i = 0; second_string[i] && i < n ; i++)
+{
+/* code */
+first_string[lenght_string++] = second_string[i];
+}
+return (first_string); 
 }
