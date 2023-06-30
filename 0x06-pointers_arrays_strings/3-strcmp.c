@@ -22,6 +22,5 @@ int _strcmp(char *first_string, char *second_string)
 		first_string++;
 		second_string++;
 	}
-	
 	return (*first_string - *second_string);
 }
