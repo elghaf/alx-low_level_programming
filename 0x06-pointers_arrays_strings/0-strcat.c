@@ -10,13 +10,11 @@
 char *_strcat(char *first_string,char *second_string)
 {
 int first = 0,second = 0;
-char result;
 
 while(first_string[first])
 {
 first++;
 }
-result = first_string;
 for (second=0; second_string[second] != 0;second++)
 {
 	first_string[first] = second_string[second];
