@@ -6,7 +6,6 @@
  * @second_string: second string
  * Return: pointer to resulting string.
  */
-
 char *_strcat(char *first_string,char *second_string)
 {
 int first = 0,second = 0;
