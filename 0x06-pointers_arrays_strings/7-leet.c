@@ -11,22 +11,22 @@
  * Return: Pointer to the encoded string.
  */
 
-char *leet(char *s)
+char *leet(char *str)
 {
-char *letters = "AEOTL";
-char *numbers = "43071";
+char *leetLetters = "AEOTL";
+char *leetNumbers = "43071";
 int i, j;
 
-for (i = 0; s[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-	for (j = 0; letters[j] != '\0'; j++)
+	for (j = 0; leetLetters[j] != '\0'; j++)
 	{
-		if (s[i] == letters[j] || s[i] == letters[j] + 32)
+		if (str[i] == leetLetters[j] || str[i] == leetLetters[j] + 32)
 		{
-			s[i] = numbers[j];
+			str[i] = leetNumbers[j];
 			break;
 		}
 	}
 }
-return s;
+return (str);
 }
