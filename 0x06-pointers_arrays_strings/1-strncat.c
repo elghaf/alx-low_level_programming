@@ -18,7 +18,6 @@ lenght_string++;
 }
 for ( i = 0; second_string[i] && i < n ; i++)
 {
-/* code */
 first_string[lenght_string++] = second_string[i];
 }
 return (first_string); 
