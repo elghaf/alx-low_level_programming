@@ -8,10 +8,10 @@
  * @n : number of bytes from the second_string.
  * 
  **/
-
 char *_strncat(char *first_string, char *second_string, int n)
 {
     int lenght_string = 0, i =0;
+
     while (first_string[i++])
     {
         lenght_string++;
@@ -21,7 +21,5 @@ char *_strncat(char *first_string, char *second_string, int n)
         /* code */
         first_string[lenght_string++] = second_string[i];
     }
-    return (first_string);
-    
-    
+    return (first_string); 
 }
