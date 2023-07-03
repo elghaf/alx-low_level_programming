@@ -8,7 +8,7 @@
  *
  * Return: A pointer to the memory area str.
  */
-char *_memset(char *str, char ch, unsigned int count)
+char *_memset(char *str, char ch, int count)
 {
 int i;
 
