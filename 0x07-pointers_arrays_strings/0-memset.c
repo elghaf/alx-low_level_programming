@@ -8,15 +8,14 @@
  *
  * Return: pointer to the destination memory
  */
-char *my_memcpy(char *destination, char *source, unsigned int num_bytes)
+char *_memcpy(char *destination, char *source, unsigned int num_bytes)
 {
-    unsigned int i;
+unsigned int i;
 
-    for (i = 0; i < num_bytes; i++)
-    {
-        destination[i] = source[i];
-    }
-
-    return destination;
+for (i = 0; i < num_bytes; i++)
+{
+    destination[i] = source[i];
+}
+return destination;
 }
 
