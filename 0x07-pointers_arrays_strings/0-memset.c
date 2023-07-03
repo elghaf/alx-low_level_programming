@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _memset - Fills a block of memory with a specified value.
  * @value: The value to be set.
