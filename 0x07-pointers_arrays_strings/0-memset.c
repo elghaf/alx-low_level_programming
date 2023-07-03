@@ -2,20 +2,21 @@
 
 /**
  * _memset - Fills memory with a constant byte.
- * @str: A pointer to character.
- * @ch: A character with constant byte.
- * @count: An integer as the number of characters to be filled.
+ * @pointer_character: A pointer of the character.
+ * @character_cte: A character with byte cte.
+ * @n: an integer.
  *
- * Return: A pointer to the memory area str.
+ * Return: A pointer to the memory area pointer_character.
  */
-char *_memset(char *str, char ch, int count)
+char *_memset(char *pointer_character, char character_cte, unsigned int n)
 {
 int i;
 
-for (i = 0; count > 0; i++)
+for (i = 0; n > 0; i++)
 {
-    str[i] = ch;
-    count--;
+pointer_character[i] = character_cte;
+n--;
 }
-return (str);
+
+return (pointer_character);
 }
