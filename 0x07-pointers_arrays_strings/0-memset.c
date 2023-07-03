@@ -1,22 +1,19 @@
-#include "main.h"
-
 /**
- * _memset - Fills memory with a constant byte.
- * @pointer_character: A pointer of the character.
- * @character_cte: A character with byte cte.
- * @n: an integer.
+ * _memset - Fills a block of memory with a specified value.
  *
- * Return: A pointer to the memory area pointer_character.
+ * @destination: Pointer to the memory block to be filled.
+ * @value: The value to be set.
+ * @num_bytes: Number of bytes to be filled.
+ *
+ * Return: Pointer to the filled memory block (@destination).
  */
-char *_memset(char *pointer_character, char character_cte, unsigned int n)
+char *_memset(char *destination, char value, unsigned int num_bytes)
 {
-int i;
+unsigned int i;
 
-for (i = 0; n > 0; i++)
+for (i = 0; i < num_bytes; i++)
 {
-pointer_character[i] = character_cte;
-n--;
+    destination[i] = value;
 }
-
-return (pointer_character);
+return (destination);
 }
