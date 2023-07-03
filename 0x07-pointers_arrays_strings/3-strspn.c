@@ -1,29 +1,28 @@
 #include "main.h"
-
 /**
  * _strspn - Entry point
- * @str: input
- * @chars: input
- * Return: The number of bytes in the initial segment of str which consist only of bytes from chars.
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
-unsigned int _strspn(char *str, char *chars)
+unsigned int _strspn(char *s, char *accept)
 {
-    unsigned int count = 0;
-    int i;
+	unsigned int n = 0;
+	int r;
 
-    while (*str)
-    {
-        for (i = 0; chars[i]; i++)
-        {
-            if (*str == chars[i])
-            {
-                count++;
-                break;
-            }
-            else if (chars[i + 1] == '\0')
-                return count;
-        }
-        str++;
-    }
-    return count;
+	while (*s)
+	{
+		for (r = 0; accept[r]; r++)
+		{
+			if (*s == accept[r])
+			{
+				n++;
+				break;
+			}
+			else if (accept[r + 1] == '\0')
+				return (n);
+		}
+		s++;
+	}
+	return (n);
 }

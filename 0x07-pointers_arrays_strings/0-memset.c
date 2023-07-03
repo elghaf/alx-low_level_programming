@@ -1,17 +1,21 @@
-/**
- * _memset - Fills a block of memory with a specified value.
- * @value: The value to be set.
- * @num_bytes: Number of bytes to be filled.
- * @destination: Pointer to the memory block to be filled.
- * Return: Pointer to the filled memory block (@destination).
- */
-char *_memset(char *destination, char value, unsigned int num_bytes)
-{
-unsigned int i;
+#include "main.h"
 
-for (i = 0; i < num_bytes; i++)
+/**
+ * _memset - fill a block of memory with a specific value
+ * @s: starting address of memory to be filled
+ * @b: the desired value
+ * @n: number of bytes to be changed
+ *
+ * Return: changed array with new value for n bytes
+ */
+char *_memset(char *s, char b, unsigned int n)
 {
-    destination[i] = value;
-}
-return (destination);
+	int i = 0;
+
+	for (; n > 0; i++)
+	{
+		s[i] = b;
+		n--;
+	}
+	return (s);
 }

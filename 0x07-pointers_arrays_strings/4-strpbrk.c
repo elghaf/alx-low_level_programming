@@ -1,24 +1,23 @@
 #include "main.h"
-
 /**
  * _strpbrk - Entry point
- * @str: input
- * @chars: input
- * Return: A pointer to the first occurrence in str of any character from chars, or NULL if no match is found.
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
-char *_strpbrk(char *str, char *chars)
+char *_strpbrk(char *s, char *accept)
 {
-    int i;
+		int k;
 
-    while (*str)
-    {
-        for (i = 0; chars[i]; i++)
-        {
-            if (*str == chars[i])
-                return str;
-        }
-        str++;
-    }
+		while (*s)
+		{
+			for (k = 0; accept[k]; k++)
+			{
+			if (*s == accept[k])
+			return (s);
+			}
+		s++;
+		}
 
-    return ('\0');
+	return ('\0');
 }
