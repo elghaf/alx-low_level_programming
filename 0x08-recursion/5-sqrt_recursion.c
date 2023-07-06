@@ -37,12 +37,12 @@ int sqrt_helper(int n, int start, int end)
 	else if (square < n)
 	{
 		result = sqrt_helper(n, mid + 1, end);
-		return (sqrt_helper(n, mid + 1, end));
+		return (result);
 	}
 
 	else
 	{
 		result = sqrt_helper(n, start, mid - 1);
-		return (sqrt_helper(n, start, mid - 1));
+		return (result);
 	}
 }
