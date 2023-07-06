@@ -29,7 +29,7 @@ int actual_sqrt_recursion(int n, int i)
 
 	a = n;
 	b = i;
-	if (i * i > n)
+	if (b * b > a)
 		return (-1);
 	if (i * i == n)
 		return (i);
