@@ -13,7 +13,6 @@ int actual_sqrt_recursion(int n, int i);
  * The function starts by checking if `n`
  *  is less than 0. If it is, the function returns -1
  * to indicate an invalid input.
- * 
  * Return: The resulting square root,
  * or -1 if the input is invalid.
  */
@@ -23,19 +22,16 @@ int _sqrt_recursion(int n)
 		return (-1);
 	return (actual_sqrt_recursion(n, 0));
 }
-
 /**
  * actual_sqrt_recursion - Recursively finds 
  * the natural square root of a number.
  * @n: The number to calculate the square root of.
  * @i: Iterator.
- *
  * Description:
  * This function recursively calculates,
  * the square root of a given number.
  * It takes an input number `n` and an iterator `i`,
  * which represents the current approximation.
- * 
  * Return: The resulting square root,
  *  or -1 if the square root is not a whole number.
  */
