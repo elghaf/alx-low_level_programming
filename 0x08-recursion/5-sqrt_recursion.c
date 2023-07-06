@@ -1,50 +1,37 @@
 #include "main.h"
 
+int actual_sqrt_recursion(int n, int i);
 /**
- * _sqrt_recursion - Returns the natural square root of a number using recursion.
- * @n: The number to calculate the square root of.
- *
- * Return: The resulting square root, or -1 if the input is invalid.
- */
+ * _sqrt_recursion - 
+ * returns the natural square root of a number
+ * @n: number to calculate the square root of
+ * Return: the resulting square root
+*/
 int _sqrt_recursion(int n)
 {
-	int result;
-
 	if (n < 0)
 		return (-1);
-	result = sqrt_helper(n, 1, n);
-	return (result);
+	return (actual_sqrt_recursion(n, 0));
 }
 
 /**
- * sqrt_helper - Recursive helper function to find the square root of a number.
- * @n: The number to calculate the square root of.
- * @start: The starting value to search for the square root.
- * @end: The ending value to search for the square root.
- *
- * Return: The resulting square root, or -1 if the square root is not a whole number.
- */
-int sqrt_helper(int n, int start, int end)
+ * actual_sqrt_recursion - 
+ * recurses to find the natural
+ * @n: number to calculate t
+ * he sqaure root of
+ * square root of a number
+ * @i: iterator
+ * Return: the resulting square root
+*/
+int actual_sqrt_recursion(int n, int i)
 {
-	int mid, square;
-	int result;
-	if (start > end)
+	int a,b;
+
+	a = n;
+	b = i;
+	if (i * i > n)
 		return (-1);
-
-	mid = (start + end) / 2;
-	square = mid * mid;
-
-	if (square == n)
-		return (mid);
-	else if (square < n)
-	{
-		result = sqrt_helper(n, mid + 1, end);
-		return (result);
-	}
-
-	else
-	{
-		result = sqrt_helper(n, start, mid - 1);
-		return (result);
-	}
+	if (i * i == n)
+		return (i);
+	return (actual_sqrt_recursion(n, i + 1));
 }
