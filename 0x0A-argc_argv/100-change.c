@@ -19,7 +19,7 @@ int main(int c_argc, char *v_argv[])
 	if (c_argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
 	cent = atoi(v_argv[1]);
@@ -27,7 +27,7 @@ int main(int c_argc, char *v_argv[])
 	if (cent < 0)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
 
 	for (i = 0; i < num_denominations; i++)
@@ -38,5 +38,5 @@ int main(int c_argc, char *v_argv[])
 
 	printf("%d\n", coins);
 
-	return 0;
+	return (0);
 }
