@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-/*
- * main - The program that multiplies two numbers
- * @c_argc: The count of input numbers
- * @v_argv: The array of input numbers
- * Description: This program takes two numbers as input
- * and performs multiplication
+/**
+ * main - a program that prints the number of arguments passed into it
+ * @c_argc: Number of Argument passed
+ * @v_argv: string of argument
  * Return: success
- **/
+ */
 int main (int c_argc, char *v_argv[])
 {
 int i=0;
