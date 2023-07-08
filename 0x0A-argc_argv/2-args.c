@@ -5,7 +5,6 @@
  * @c_argc: Number of Argument passed it
  * @v_argv: string of the argument
  * Description: This program takes two numbers as input
- * and performs multiplication
  * Return: success
  */
 int main (int c_argc, char *v_argv[])
