@@ -2,12 +2,13 @@
 #include "stdio.h"
 
 /**
- * main - A program that prints the name that been added.
- * @c_argc: Argument of the len of the array 
- * @v_argv: array value
+ * main - A program that prints its name, followed by a new line
+ * @c_argc: Argument count
+ * @v_argv: Array of arguments
  * Return: Success
- */
-
+ * Description: This program prints its name, followed by a new line.
+ * It serves as an
+ **/
 int main(int c_argc __attribute__((unused)), char *v_argv[])
 {
 printf("%s\n", v_argv[0]);
