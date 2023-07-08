@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * main - Prints the multiplication of two argument numbers
- * @c_argc: Argument count input
- * @v_argv: Argument vector array
- * Return: Success
- * Description: This program takes two numbers as command-line arguments and performs
- **/
+/**
+ * main - prints the multiplication of two args numbers
+ * @c_argc: argument count
+ * @v_argv: argument vector
+ * Return: 0
+ */
 int main(int c_argc, char *v_argv[])
 {
 int multi=1;
