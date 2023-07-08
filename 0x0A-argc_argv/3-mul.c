@@ -3,10 +3,10 @@
 
 /*
  * main - Prints the multiplication of two argument numbers
- * @argc: Argument count
- * @argv: Argument vector
- * Return: Success
- * Description: This program takes twon umbers as command-line arguments and performs
+ * @c_argc : Argument count
+ * @v_argv : Argument vector
+ * Return : Success
+ * Description : This program takes twon umbers as command-line arguments and performs
  **/
 int main(int c_argc, char *v_argv[])
 {
