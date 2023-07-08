@@ -5,9 +5,9 @@
  * main - Prints the multiplication of two argument numbers
  * @argc: Argument count
  * @argv: Argument vector
- * Return: 0
+ * Return: Success
  * Description: This program takes two
- *  numbers as command-line arguments and performs
+ * numbers as command-line arguments and performs
  **/
 int main(int c_argc, char *v_argv[])
 {
