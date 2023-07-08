@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
             {
                 if (!isdigit(arg[j]))
                 {
-                    printf("Error: Invalid argument\n");
+                    printf("Error\n");
                     return 1;
                 }
             }
