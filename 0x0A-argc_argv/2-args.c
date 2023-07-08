@@ -6,7 +6,7 @@
  * @v_argv: The array of input numbers.
  * Description: This program takes two numbers as input
  * and performs multiplication.
- * Return: Success
+ * Return: success
  **/
 int main (int c_argc, char *v_argv[])
 {
