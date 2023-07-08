@@ -4,7 +4,7 @@
  * main - A program that prints the number of input arguments
  * @c_argc: Count of the number of arguments input
  * @v_argv: Array of argument strings
- * Description: This program prints 
+ * Description: This program prints
  * the number of input arguments provided.
  * Return: Success
  **/
