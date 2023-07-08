@@ -4,7 +4,7 @@
  * main - The program that multiplies two numbers.
  * @c_argc: The count of input numbers.
  * @v_argv: The array of input numbers.
- * Description: This program takes two numbers as input,
+ * Description: This program takes two numbers as input
  * and performs multiplication.
  * Return: Success
  **/
