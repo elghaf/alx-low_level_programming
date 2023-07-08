@@ -10,7 +10,7 @@
  **/
 int main(int c_argc, char *v_argv[]__attribute__((unused)))
 {
-	printf("%d", c_argc - 1);
-	printf("\n");
-	return (0);
+printf("%d", c_argc - 1);
+printf("\n");
+return (0);
 }
