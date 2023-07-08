@@ -11,7 +11,7 @@
  **/
 int main(int c_argc, char *v_argv[])
 {
-int multi;
+int multi=1;
 
 if(c_argc == 3)
 {
