@@ -6,8 +6,7 @@
  * @argc: Argument count
  * @argv: Argument vector
  * Return: Success
- * Description: This program takes two
- * numbers as command-line arguments and performs
+ * Description: This program takes twon umbers as command-line arguments and performs
  **/
 int main(int c_argc, char *v_argv[])
 {
