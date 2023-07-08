@@ -15,6 +15,7 @@ int main (int c_argc, char *v_argv[])
 	for(i =0;i<c_argc; i++)
 	{
 		printf("%s", v_argv[i]);
+		printf("\n");
 	}
 	return (0);
 }
