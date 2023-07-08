@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /*
- * main - the program that mutiplies two numbers
- * @c_argc : the count of input number
- * @v_argv : the array of the input number
- * Return : Success
- * Description : program that take the arg and do 
- * multulication
+ * main - The program that multiplies two numbers.
+ * @argc: The count of input numbers.
+ * @argv: The array of input numbers.
+ * Return: Success.
+ * Description: This program takes two numbers as input,
+ * and performs multiplication.
  **/
 int main (int c_argc, char *v_argv[])
 {
