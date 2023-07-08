@@ -6,6 +6,7 @@
  * @c_argc: argument count
  * @v_argv: argument vector
  * Return: 0
+ * Description: This program takes two numbers
  */
 int main(int c_argc, char *v_argv[])
 {
