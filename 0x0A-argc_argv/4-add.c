@@ -4,10 +4,14 @@
 #include <string.h>
 
 /**
- * main - program that adds numbers positives
- * @c_argc : Number of arg
- * @v_argv : string of arg
- * Return : Success
+ * main - Entry point
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Description: Prints the sum of positive numbers from the command line arguments.
+ * If any argument is not a positive number, it prints an error message.
+ *
+ * Return: 0 on success, 1 on error
  */
 int main(int argc, char *argv[])
 {
