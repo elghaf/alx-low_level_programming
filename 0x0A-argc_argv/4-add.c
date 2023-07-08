@@ -8,8 +8,10 @@
  * @argc: argument count
  * @argv: argument vector
  *
- * Description: Prints the sum of positive numbers from the command line arguments.
- * If any argument is not a positive number, it prints an error message.
+ * Description: Prints the sum of positive
+ * numbers from the command line arguments.
+ * If any argument is not a positive number,
+ * it prints an error message.
  *
  * Return: 0 on success, 1 on error
  */
