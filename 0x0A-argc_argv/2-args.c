@@ -2,8 +2,8 @@
 
 /*
  * main - The program that multiplies two numbers.
- * @argc: The count of input numbers.
- * @argv: The array of input numbers.
+ * @c_argc: The count of input numbers.
+ * @v_argv: The array of input numbers.
  * Return: Success.
  * Description: This program takes two numbers as input,
  * and performs multiplication.
