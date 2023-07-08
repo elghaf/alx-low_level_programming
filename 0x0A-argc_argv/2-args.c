@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints the number
- * @c_argc: Number of Argument passed it
- * @v_argv: string of the argument
- * Description: This program takes two numbers as input
- * Return: success
+ * main - A program that prints the number of arguments passed into it
+ * @c_argc: Number of arguments passed
+ * @v_argv: Array of argument strings
+ * Description: This program prints the number of arguments passed into it. It serves as
+ * Return: Success
  */
 int main (int c_argc, char *v_argv[])
 {
