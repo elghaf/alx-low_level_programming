@@ -18,11 +18,11 @@ if(c_argc == 3)
 multi = atoi(v_argv[c_argc -1]) * atoi(v_argv[c_argc-2]);
 printf("%d", multi);
 printf("\n");
-return(0);
 }
 else
 {
-printf("error\n");
-return (1);
+printf("Error\n");
+return(1);
 }
+return(0);
 }
