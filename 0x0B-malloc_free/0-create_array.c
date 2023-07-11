@@ -12,23 +12,24 @@ char *create_array(unsigned int size, char c)
 char *result;
 unsigned int i;
 
-if(size == 0)
+if (size == 0)
 {
 	return (NULL);
 }
 else
 {
 result = malloc(sizeof(char) * size);
-if(result == NULL)
+if (result == NULL)
 {
 return (NULL);
 }
-else{
+else
+{
 for (i = 0; i < size; i++)
 {
 result[i] = c;
 }
-return(result);
+return (result);
 }
 }
 }
