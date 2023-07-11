@@ -6,8 +6,8 @@
  * @size: The size of the array.
  * @c : the char to init the array with.
  * Return: If size == 0 or a pointer of the array.
- * Description: this function dynamically allocates memory
- * for an array of characters.
+ * description: create_array this function dynamically allocates
+ * memory for an array of characters.
  **/
 char *create_array(unsigned int size, char c)
 {
