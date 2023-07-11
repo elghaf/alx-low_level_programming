@@ -6,7 +6,7 @@
  * @size: The size of the array.
  * @c : the char to init the array with.
  * Return: If size == 0 or a pointer of the array.
- * description: The create_array function is used to create
+ * Description: The create_array function is used to create
  *  an array of characters.
  **/
 char *create_array(unsigned int size, char c)
