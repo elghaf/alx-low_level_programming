@@ -5,9 +5,6 @@
  * create_arrat - Create array of char.
  * @size: The size of the array.
  * @c : the char to init the array with.
- *
- * Return: If size == 0 or the function fails - NULL.
- *
  * Return: If size == 0 or a pointer of the array.
  * */
 
