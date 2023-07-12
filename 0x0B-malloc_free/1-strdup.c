@@ -16,17 +16,17 @@ char *result;
 int i, n = 0;
 
 if (str == NULL)
-    return (NULL);
+return (NULL);
 else
 {
-for( i = 0; str[i]; i++)
+for(i = 0; str[i]; i++)
 n++;
 result = malloc(sizeof(char) * (n + 1));
 if (result == NULL)
 return (NULL);
 else
 {
-for ( i = 0; str[i]; i++){
+for(i = 0; str[i]; i++){
 result[i] = str[i];
 }
 result[n] = '\0';
