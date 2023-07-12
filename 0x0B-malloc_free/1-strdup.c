@@ -13,7 +13,7 @@
 char *_strdup(char *str)
 {
 char *result;
-int i, n=0;
+int i, n = 0;
 
 if (str == NULL)
 {
@@ -21,7 +21,7 @@ if (str == NULL)
 }
 else
 {
-for( i=0; str[i]; i++)
+for( i = 0; str[i]; i++)
 {
 n++;
 }
