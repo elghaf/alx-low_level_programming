@@ -16,20 +16,14 @@ char *result;
 int i, n = 0;
 
 if (str == NULL)
-{
     return (NULL);
-}
 else
 {
 for( i = 0; str[i]; i++)
-{
 n++;
-}
 result = malloc(sizeof(char) * (n + 1));
 if (result == NULL)
-{
 return (NULL);
-}
 else
 {
 for ( i = 0; str[i]; i++){
