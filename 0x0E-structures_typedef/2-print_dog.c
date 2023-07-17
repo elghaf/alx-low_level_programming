@@ -1,9 +1,10 @@
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
- * @
- * 
+ * print_dog - struct dog
+ * @d: struct dog for printf
  */
 void print_dog(struct dog *d)
 {
@@ -16,5 +17,4 @@ age = d->age;
 printf("Name: %s", name);
 printf("Age: %d", age);
 printf("Owner: %s", owner);
-return (0);
 }
