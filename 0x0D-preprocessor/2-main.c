@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - prints the names of a files
- * return: 0 (success)
  * 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
