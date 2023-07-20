@@ -12,12 +12,11 @@ int i = 0;
 
 if (array == NULL || size <= 0 || cmp == NULL)
 	return (-1);
-
 while(i < size)
 {
-	if (cmp(array[i]))
-	return (i);
-    i++;
+if (cmp(array[i]))
+return (i);
+i++;
 }
 return (-1);
 }
