@@ -9,7 +9,7 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-unsigned int i;
+unsigned int i = 0;
 
 if(cmp == NULL || size <= 0 || array == NULL)
 return (-1);
@@ -18,6 +18,7 @@ while (i < size)
 /* code */
 if(cmp(array[i]))
 return (i);
+i++;
 }
 return (-1);
 }
