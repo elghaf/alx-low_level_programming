@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 int num_bytes, i = 0;
-char *arr;
+char *array_arg;
 
 num_bytes = atoi(argv[1]);
 if (argc != 2)
