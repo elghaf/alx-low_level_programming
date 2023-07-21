@@ -18,6 +18,7 @@ int sum_them_all(const unsigned int n, ...)
     {
         /* code */
         som = som + va_arg(ap, int);
+        i++;
     }
     va_end(ap);
     return (som):    
