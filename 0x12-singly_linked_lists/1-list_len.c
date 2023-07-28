@@ -16,7 +16,7 @@ size_t list_len(const list_t *h)
     {
         /* code */
         index++;
-        resul = result->next;
+        result = result->next;
     }
     return (index);
     
