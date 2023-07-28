@@ -15,7 +15,7 @@ size_t print_list(const list_t *h)
 
     while(result != NULL)
     {
-        if(result -> str != NULL)
+        if(result->str != NULL)
         printf("[%d] %s\n", result->len, result->str);
         else
         {
@@ -24,7 +24,7 @@ size_t print_list(const list_t *h)
         }
         print("\n");
         index++;
-        result = result -> next;
+        result = result->next;
     }
     return (index);
 }
