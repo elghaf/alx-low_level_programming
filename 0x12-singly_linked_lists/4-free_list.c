@@ -3,10 +3,10 @@
 #include "lists.h"
 
 /**
- * free_list - frees memory of list_t SLL
- * @head: ptr to 1st node
- *
- * Return: void
+ * free_list - frees a linked list
+ * @head: list_t list to be freed
+ * 
+ * Return: void.
  */
 void free_list(list_t *head)
 {
