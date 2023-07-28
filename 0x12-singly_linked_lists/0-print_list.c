@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
         {
             print("[0] (nil)");
         }
-        print("\n");
+        printf("\n");
         index++;
         result = result->next;
     }
