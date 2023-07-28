@@ -10,7 +10,7 @@
 size_t list_len(const list_t *h)
 {
     const list_t *result = h;
-    size_t index = 0;
+    unsigned int index = 0;
 
     while (result != NULL)
     {
