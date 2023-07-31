@@ -12,12 +12,11 @@ size_t print_listint(const listint_t *h)
     int i = 0;
     listint_t const *chois;
 
-    chois = h;
-    while (chois != NULL)
+    while (h != NULL)
     {
         /* code */
-        printf("%d\n", chois->n);
         i++;
+        printf("%d\n", chois->n);
         chois = chois->next;
     }
     return (i);
