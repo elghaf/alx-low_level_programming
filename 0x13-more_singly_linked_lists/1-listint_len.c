@@ -1,21 +1,19 @@
 #include "lists.h"
 
 /**
-  * listint_len - Print length of list
-  * @h: The head pointer
-  * Return: The number of terms in a singly linked list
+  * listint_len - Return length of list printed
+  * @h: The head pointer first of the list
+  * Return: The number of nodes in a singly linked list
   */
 size_t listint_len(const listint_t *h)
 {
-	unsigned int num_of_terms = 0;
-	struct listint_s const *temp = NULL;
+	const listint_t *node_len = h;
+	size_t times = 0;
 
-	temp = h;
-
-	while (temp != NULL)
+	while (node_len)
 	{
-		num_of_terms++;
-		temp = temp->next;
+		times++;
+		node_len = node_len->next;
 	}
-	return (num_of_terms);
+	return (times);
 }
