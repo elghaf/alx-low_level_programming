@@ -9,7 +9,7 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	int node_pop = 0;
+	unsigned int node_pop = 0;
     listint_t *chois = head;
 
 
