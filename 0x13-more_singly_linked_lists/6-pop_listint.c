@@ -10,13 +10,12 @@ int pop_listint(listint_t **head)
 	listint_t *chois;
 	int node_pop;
 
-	if (*head == NULL || head == NULL)
-	{
+	if (*head == NULL || !head)
 		return (0);
-	}
-	chois = *head;
-	*head = (*head)->next;
-	node_pop = chois->n;
-	free(chois);
+
+	node_pop = (*head)->n;
+	chois = (*head)->next;
+	free(*head);
+	*head = chois
 	return (node_pop);
 }
