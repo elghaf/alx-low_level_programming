@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- *get_nodeint_at_index - Get the node at the desired location
- *@head: The pointer to the first node
- *@index: position of the desired node
+ * get_nodeint_at_index - returns the node at a certain index in a linked list
+ * @head: source code
+ * @index: number to be printed
  *
- *Return: the data of the desired node
+ * Return: ....
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
