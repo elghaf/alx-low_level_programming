@@ -13,9 +13,9 @@ int pop_listint(listint_t **head)
 	if (*head == NULL || !head)
 		return (0);
 
-	node_pop = (*head)->n;
-	chois = (*head)->next;
-	free(*head);
-	*head = chois
+	chois = *head;
+	*head = (*head)->next;
+	node_pop = chois->n;
+	free(chois);
 	return (node_pop);
 }
