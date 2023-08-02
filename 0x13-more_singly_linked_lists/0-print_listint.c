@@ -10,7 +10,7 @@
 size_t print_listint(const listint_t *h)
 {
     int i = 0;
-    listint_t const *chois;
+    listint_t const *chois = h;
 
     while (h != NULL)
     {
