@@ -11,19 +11,28 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    char *bufers;
-    ssize_t files, writ, re;
+    char *buffer;
+	ssize_t open_file, read_file, write_file;
 
-    files = open(filename, O_RDONLY)
-    if (files == -1)
-    {
-        /* code */
-        return (0);
-    }
-    bufers = malloc(sizeof(char) * letters);
-    re = read(files, bufers, letters);
-    writ = write(STDOUT_FILENO, bufers, re);
-    free(bufers);
-    close(files);
-    return (writ);    
+	if (filename == NULL)
+		return (0);
+
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+		return (0);
+
+	open_file = open(filename, O_RDONLY);
+	read_file = read(open_file, buffer, letters);
+	write_file = write(STDOUT_FILENO, buffer, read_file);
+
+	if (open_file == -1 || read_file == -1 || write_file == -1 || write_file != read_file)
+	{
+		free(buffer);
+		return (0);
+	}
+
+	free(buffer);
+	close(open_file);
+
+	return (write_file); 
 }
