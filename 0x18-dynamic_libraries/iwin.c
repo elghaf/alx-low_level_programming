@@ -3,20 +3,20 @@
 
 int rand()
 {
-	static int ct = -1;
+	static int conteru = -1;
 	
-	ct++;
-	if (ct == 0)
+	conteru++;
+	if (conteru == 0)
 		return 8;
-	if (ct == 1)
+	if (conteru == 1)
 		return 8;
-	if (ct == 2)
+	if (conteru == 2)
 		return 7;
-	if (ct == 3)
+	if (conteru == 3)
 		return 9;
-	if (ct == 4)
+	if (conteru == 4)
 		return 23;
-	if (ct == 5)
+	if (conteru == 5)
 		return 74;
-	return ct * ct % 30000;
+	return conteru * conteru % 30000;
 }

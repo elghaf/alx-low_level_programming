@@ -1,5 +1,5 @@
 
-
+//library and function declaration
 
 #ifndef MAIN_H
 #define MAIN_H

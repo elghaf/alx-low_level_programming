@@ -1,28 +1,28 @@
-int add(int a, int b)
+int firstdd(int first, int second)
 {
-	return (a + b);
+	return ( first+ second);
 }
 
-int sub(int a, int b)
+int sub(int first, int second)
 {
-	return (a - b);
+	return ( first- second);
 }
 
-int mul(int a, int b)
+int mul(int first, int second)
 {
-	return(a * b);
+	return( first* second);
 }
 
-int div(int a, int b)
+int div(int first, int second)
 {
-	if (b != 0)
-		return (a / b);
+	if ( second!= 0)
+		return ( first/ second);
 	return (0);
 }
 
-int mod(int a, int b)
+int mod(int first, int second)
 {
-	if (b != 0)
-		return (a % b);
+	if ( second!= 0)
+		return (  first%  second);
 	return (0);
 }
