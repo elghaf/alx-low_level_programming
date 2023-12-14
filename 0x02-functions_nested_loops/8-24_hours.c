@@ -1,31 +1,23 @@
 #include "main.h"
 
 /**
- * jack_bauer 
- *
- * Description: This function prints the time in HH:MM format for every minute of the day.
- *              
+ * jack_bauer - Prints every minute of the day of
+ *              Jack Bauer, starting from 00:00 to 23:59.
  */
-
 void jack_bauer(void)
 {
-	int h, min;
+	int hour, minute;
 
-	h = 0;
-
-	while (h < 24)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		min = 0;
-		while (min < 60)
+		for (minute = 0; minute <= 59; minute++)
 		{
-			_putchar((h / 10) + '0');
-			_putchar((h % 10) + '0');
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
 			_putchar(':');
-			_putchar((min / 10) + '0');
-			_putchar((min % 10) + '0');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
 			_putchar('\n');
-			min++;
 		}
-		h++;
 	}
 }
